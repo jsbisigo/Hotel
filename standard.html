@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+       section {
+            padding: 100px;
+            margin: 0 auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .img {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .img img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .descricao_produtos {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .descricao_produtos th, .descricao_produtos td {
+            border: 1px solid #ddd;
+            font-size: 18px;
+            padding: 15px;
+            text-align: left;
+        }
+        .descricao_produtos th {
+            background-color: #f4f4f4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .buttonr {
+            background-color: #2f3942;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .buttonr:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="interface_inicio">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/hamonia.png" alt="logo hotel" class="img-pequena">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="./acomodacoes.html">Acomodações</a></li>
+                    <li><a href="./reserva.html">Reservas</a></li>
+                    <li><a href="./confirmar.html">Confirmação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>   
+        <section>
+            <div class="product-info">
+                <h1 style="font-size: 30px;">Standard</h1>
+                <img src="img/quarto_standard/standard.jpg" alt="standard">
+                <div class="img">
+                    <img src="img/quarto_standard/best_western_10875-150x150.jpg" alt="standard">
+                    <img src="img/quarto_standard/best_western_10864-150x150.jpg" alt="standard">
+                    <img src="img/quarto_standard/best_western_10372-150x150.jpg" alt="standard">
+                </div>
+                <div class="form-container">
+                    <article>
+                        <table class="descricao_produtos">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Detalhes do Quarto:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Descrição: O Quarto Standard oferece uma estadia confortável e prática, ideal para turistas e viajantes que buscam uma opção acessível sem abrir mão do conforto básico.</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Caraterísticas:</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td >Cama double ou 2 camas de solteiro <br> Sala de Estar <br> Banheiro <br> Secador de Cabelo <br> TV a cabo <br> Acesso Wi-Fi gratuito <br> Minibar <br> Cofre <br> Mesa de Trabalho Pequena<br> Vista para Jardim</td>
+                                    </tr>
+
+                                <tr>
+                                    <th colspan="2"> Serviços Inclusos: <th> 
+                                </tr>    
+
+                                <tr>    
+                                    <td>  Café da manhã simples <br> Limpeza diária do quarto</td>
+                                </tr>    
+
+                                <tr>
+                                    <th colspan="2">Valor da Diária: R$350,00</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <br>
+                    <a href="/hotel/reserva.html" class="buttonr">Reservar</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
